@@ -31,11 +31,11 @@ def parse_person(line):
 
 def parse_file(file_content: list[str]):
     people = []
-    for line in file_content:
+    for i, line in enumerate(file_content):
         try:
             person = parse_person(line)
             people.append(person)
         except ValueError as e:
-            print(f"Error: {e}")
+            print(f"Line {i + 1} error: {e}")
     
     return people
