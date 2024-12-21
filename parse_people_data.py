@@ -8,10 +8,6 @@ def parse_person(line):
 
     fields = line.strip()
     fields = fields.split(",")
-    
-    # Ensure there are exactly 3 fields
-    if len(fields) != 3:
-        raise ValueError(f"Invalid format: {line}")
 
     name, age, email = fields[0].strip(), fields[1].strip(), fields[2].strip()
 
