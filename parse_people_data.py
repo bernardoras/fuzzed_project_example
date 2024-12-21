@@ -6,8 +6,8 @@ def parse_person(line):
     age_pattern = r"^\d+$"
     email_pattern = r"^[\w\.-]+@[\w\.-]+\.\w+$"
 
-    line = line.strip()
-    fields = line.split(",")
+    fields = line.strip()
+    fields = fields.split(",")
     
     # Ensure there are exactly 3 fields
     if len(fields) != 3:
